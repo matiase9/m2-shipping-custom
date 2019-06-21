@@ -1,0 +1,6 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Api/etc/extension_attributes.xsd">
+    <extension_attributes for="Magento\Quote\Api\Data\ShippingMethodInterface">
+        <attribute code="carrier_estimate" type="string" />
+        <attribute code="carrier_options" type="Mramirez\Shipping\Api\Data\ShippingAttributeInterface[]" />
+    </extension_attributes>
+</config>

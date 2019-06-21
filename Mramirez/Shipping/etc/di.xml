@@ -1,0 +1,5 @@
+<config>
+    <type name="Magento\Quote\Model\Cart\ShippingMethodConverter">
+        <plugin name="add_estimate_to_carrier" type="Mramirez\Shipping\Plugin\Estimate" sortOrder="30" disabled="false"/>
+    </type>
+</config>
