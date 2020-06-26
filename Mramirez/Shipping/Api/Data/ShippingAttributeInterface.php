@@ -10,12 +10,12 @@ interface ShippingAttributeInterface extends ExtensibleDataInterface
     /**
      * @return ShippingAttributeInterface|null
      */
-    public function getExtensionAttributes();
+    public function getCarrierOptions();
     /**
      * @param ShippingAttributeInterface $extensionAttributes
      * @return self
      */
-    public function setExtensionAttributes
+    public function setCarrierOptions
     (
         ShippingAttributeInterface $extensionAttributes
     );
