@@ -2,7 +2,7 @@
 
 namespace Mramirez\Shipping\Api\Data;
 
-use \Magento\Framework\Api\ExtensibleDataInterface;
+use Magento\Framework\Api\ExtensibleDataInterface;
 
 
 interface ShippingAttributeInterface extends ExtensibleDataInterface
