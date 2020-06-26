@@ -16,11 +16,6 @@ class Estimate
     protected $extensionFactory;
 
     /**
-     * @var SellerCustom
-     */
-    protected $sellerCusstomMethod;
-
-    /**
      * @var Shipping
      */
     protected $shippingMethod;
@@ -39,20 +34,17 @@ class Estimate
      * DeliveryDate constructor.
      *
      * @param ShippingMethodExtensionFactory $extensionFactory
-     * @param SellerCustom $sellerCustomMethod
      * @param Shipping $shippingMethod
      * @param Connection $connection
      * @param Cart $checkoutCart
      */
     public function __construct(
         ShippingMethodExtensionFactory $extensionFactory,
-        SellerCustom $sellerCustomMethod,
         Shipping $shippingMethod,
         Connection $connection,
         Cart $checkoutCart
     ){
         $this->extensionFactory = $extensionFactory;
-        $this->sellerCusstomMethod = $sellerCustomMethod;
         $this->shippingMethod = $shippingMethod;
         $this->connectionHelper = $connection;
         $this->checkoutCart = $checkoutCart;
